@@ -20,3 +20,19 @@
     </div>
 
 {% endmacro %}
+
+{% macro info_box(bgcolor="bg-red", number="44", text="Likes", iconclass="fa fa-star-o") %}
+
+    <div class="col-lg-3 col-xs-6">
+      <!-- info box -->
+      <div class="info-box">
+        <span class="info-box-icon {{ bgcolor }}"><i class="{{ iconclass }}"></i></span>
+        <div class="info-box-content">
+          <span class="info-box-text">{{ text }}</span>
+          <span class="info-box-number">{{ number }}</span>
+        </div>
+      </div>
+    </div>
+
+{% endmacro %}
+
